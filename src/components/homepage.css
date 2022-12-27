@@ -1,7 +1,7 @@
 /* Split the screen in half */
 .split {
     height: 100%;
-    width: 30%;
+    width: 40%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -11,12 +11,14 @@
   
   /* Control the left side */
   .left {
-    width:70%;
+    width:65%;
+    z-index: 1;
   }
   
   /* Control the right side */
   .right {
     right: 0;
+    
   }
   
   /* If you want the content centered horizontally and vertically */
@@ -29,15 +31,29 @@
     text-align: left;
     
   }
-  
-  /* Style the image inside the centered container, if needed */
-  .centered img {
-    width: 20rem;
-    border-radius: 50%;
-    position: relative;
-    left: 4rem;
+  img {
+    height: 25rem;
+  }
+  .wrapper{
+    display: flex;
   }
 
+  .phone1{
+    position: relative; 
+    float: left;
+    left: 4.5rem;
+  }
+
+  .phone2 {
+    position: relative;
+    float: right;
+    right: 6rem;
+    top: 3.5rem;
+
+
+  }
+  
   .space {
     height:1rem !important;
   }
+
