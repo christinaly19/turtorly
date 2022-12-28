@@ -2,10 +2,20 @@ import React from 'react'
 import "./homepage.css"
 import phone from '../assets/phone.png'
 import phone2 from '../assets/phone2.png'
+import Navbar from './navbar'
+import KommunicateChat from './chat';
+import { Routes, Route, useNavigate} from 'react-router-dom';
+import Performance from './peformance'
 
 function Homepage() {
+  const navigate = useNavigate();
+
+  const navigateToPeformance = () => {
+    navigate('./peformance');
+  };
   return (
     <div>
+      <Navbar></Navbar>
    <div class="split left bg-[#F4E9E3]">
   <div class="centered ">
     
@@ -17,7 +27,10 @@ function Homepage() {
     <p className = 'text-left text-lg font-light'> Tutor.ly connects students with their tutors <mark className = 'bg-transparent underline'> seamlessly</mark> and provides a platform for organization so that 
     assigning homework, upadting parents, and keeping track of performance has never been easier. </p>
     <br></br>
-    <button className = 'text-white bg-[#735972] hover:bg-[#473946] focus:ring-2 focus:outline-none focus:ring-gray-400 font-semibold rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800' > Get Started </button>
+    <button onClick = {navigateToPeformance} className = 'text-white bg-[#735972] hover:bg-[#473946] focus:ring-2 focus:outline-none focus:ring-gray-400 font-semibold rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800' > Get Started </button>
+    <Routes>
+              <Route path='./peformance' element={<Performance/>} />
+        </Routes>
   </div>
 </div>
 
@@ -34,7 +47,9 @@ function Homepage() {
     </wrapper>
   </div>
 </div>
+<KommunicateChat></KommunicateChat>
     </div>
+
   )
 }
 

@@ -1,15 +1,17 @@
 import './App.css';
+import Peformance from './components/peformance'
 import Homepage from './components/homepage';
-import Navbar from './components/navbar'
-import KommunicateChat from './components/chat';
+import { Routes, Route, useNavigate} from 'react-router-dom';
 
 function App() {
+
   return (
-    <div className="App">
-      <Navbar/>
-      <Homepage/>
-      <KommunicateChat/>
-    </div>
+    <div>
+    <Routes>
+    <Route path="/" element={<Homepage/>} />
+    <Route path="/peformance" element={<Peformance/>} />
+  </Routes>
+  </div>
   );
 }
 
