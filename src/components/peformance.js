@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './navbar'
 import { Rating } from '@mui/material';
 import './performance.css';
+import HoverRating from './stars'
 function Performance() {
   
   return (
@@ -14,7 +15,11 @@ function Performance() {
         <input type="text" className=' w-12 bg-[#eff2f7] ml-20 shadow-inner rounded-l p-2 flex-1' id='name'  placeholder='Enter Your Student`s Name here' />
       </form>
         <h2 className = 'tracking-wide text-xl mt-10 ml-20'> In-Class Participation:</h2>
-    <Rating className = 'mt-5 ml-20'size="large" name="half-rating" defaultValue={0} precision={0.5} max={10} />
+   <HoverRating className = 'mt-5 ml-20' size = 'large'></HoverRating>
+   <h2 className = 'tracking-wide text-xl mt-10 ml-20'> Productivity:</h2>
+   <HoverRating className = 'mt-5 ml-20' size = 'large'></HoverRating>
+   <h2 className = 'tracking-wide text-xl mt-10 ml-20'> Understanding of Material:</h2>
+   <HoverRating className = 'mt-5 ml-20' size = 'large'></HoverRating>
     </div>
   )
 }
