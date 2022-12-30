@@ -4,23 +4,24 @@ import Performance from './peformance'
 import { Routes, Route, useNavigate} from 'react-router-dom';
 
 
-function Navbar() {
+
+function Navbar({current, buttontxt, className}) {
   const navigate = useNavigate();
 
   const navigateToPeformance = () => {
     navigate('./peformance');
   };
   return (
-    <nav className = 'px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0'>
+    <nav className = {className} >
     <div class="container flex flex-wrap items-center justify-between mx-auto">
     <a href="/" class="flex items-center">
      
         <span class="self-center text-xl font-semibold whitespace-nowrap hover:text-[#C3AAB0] dark:text-white">Tutor.ly</span>
     </a>
     <div class="flex md:order-2">
-        <button onClick = {navigateToPeformance}type="button" class= "text-white  bg-black hover:bg-[#735972] focus:ring-2 focus:outline-none focus:ring-gray-400 font-semibold rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+        <button onClick = {navigateToPeformance}type="button" class= "text-white  bg-black hover:bg-[#735972] focus:ring-2 focus:outline-none focus:ring-gray-400 font-semibold rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> {buttontxt} </button>
         <Routes>
-              <Route path='./peformance' element={<Performance/>} />
+              <Route path='/peformance/*' element={<Performance/>} />
         </Routes>
         <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -30,7 +31,7 @@ function Navbar() {
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
         <li>
-          <a href="/" class="block py-2 pl-3 pr-4 font-bold md:bg-transparent hover:text-[#C3AAB0] md:text-black md:p-0 dark:text-white" aria-current="page">Home</a>
+          <a href="/" class="block py-2 pl-3 pr-4 font-bold md:bg-transparent hover:text-[#C3AAB0] md:text-black md:p-0 dark:text-white" aria-current="page">{current}</a>
         </li>
         <li>
           <a href="/about" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C3AAB0] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>

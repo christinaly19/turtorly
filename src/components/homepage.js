@@ -6,7 +6,6 @@ import Navbar from './navbar'
 import KommunicateChat from './chat';
 import { Routes, Route, useNavigate} from 'react-router-dom';
 import Performance from './peformance'
-
 function Homepage() {
   const navigate = useNavigate();
 
@@ -15,7 +14,7 @@ function Homepage() {
   };
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar buttontxt = 'Track Performance'current = 'Home'className = 'px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0'></Navbar>
    <div class="split left bg-[#F4E9E3]">
   <div class="centered ">
     
