@@ -5,7 +5,7 @@ import { Routes, Route, useNavigate} from 'react-router-dom';
 
 
 
-function Navbar({current, buttontxt, className}) {
+function Navbar({current, buttontxt, className, showbutton}) {
   const navigate = useNavigate();
 
   const navigateToPeformance = () => {
@@ -19,7 +19,8 @@ function Navbar({current, buttontxt, className}) {
         <span class="self-center text-xl font-semibold whitespace-nowrap hover:text-[#C3AAB0] dark:text-white">Tutor.ly</span>
     </a>
     <div class="flex md:order-2">
-        <button onClick = {navigateToPeformance}type="button" class= "text-white  bg-black hover:bg-[#735972] focus:ring-2 focus:outline-none focus:ring-gray-400 font-semibold rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> {buttontxt} </button>
+    {showbutton && (
+        <button onClick = {navigateToPeformance}type="button" class= "text-white  bg-black hover:bg-[#735972] focus:ring-2 focus:outline-none focus:ring-gray-400 font-semibold rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> {buttontxt} </button>  )}
         <Routes>
               <Route path='/peformance/*' element={<Performance/>} />
         </Routes>

@@ -2,3 +2,27 @@
     height: 7rem;
 }
 
+.container {
+    width: 100%
+}
+
+.left {
+    width: 65%;
+    float: left;
+}  
+
+.right{
+    width: 35%;
+    float: right;
+}  
+
+.textbox {
+    width: 25rem;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -4,13 +4,13 @@ import Box from '@mui/material/Box';
 import StarIcon from '@mui/icons-material/Star';
 
 const labels = {
-  0.5: 'Needs Improvement',
-  1: 'Needs Improvement+',
+  0.5: 'None',
+  1: 'Poor',
   1.5: 'Poor',
-  2: 'Poor',
-  2.5: 'Poor',
-  3: 'Poor+',
-  3.5: 'Poor+',
+  2: 'Poor+',
+  2.5: 'Minimal',
+  3: 'Minimal+',
+  3.5: 'Minimal+',
   4: 'Satisfactory',
   4.5: 'Satisfactory',
   5: 'Satisfactory+',
@@ -37,7 +37,7 @@ export default function HoverRating(){
   return (
     <Box
       sx={{
-        width: 200,
+        width: 250,
         display: 'flex',
         alignItems: 'center',
       }}
