@@ -1,7 +1,7 @@
-import './App.css';
+import './App.css'
 import Peformance from './components/peformance'
 import Homepage from './components/homepage';
-import { Routes, Route, useNavigate} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useNavigate} from 'react-router-dom';
 
 function App() {
 

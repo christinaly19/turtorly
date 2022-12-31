@@ -14,7 +14,7 @@ function Navbar({current, buttontxt, className}) {
   return (
     <nav className = {className} >
     <div class="container flex flex-wrap items-center justify-between mx-auto">
-    <a href="/" class="flex items-center">
+    <a href="/tutorly" class="flex items-center">
      
         <span class="self-center text-xl font-semibold whitespace-nowrap hover:text-[#C3AAB0] dark:text-white">Tutor.ly</span>
     </a>

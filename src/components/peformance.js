@@ -24,7 +24,7 @@ function Performance() {
       <div>  
        <h2 className = 'tracking-wide text-xl mt-10 ml-20'> Enter Student/Guardian Email:</h2>
         <form className=' w-1/2 mt-2 flex '>
-        <input type="text" className=' w-12 bg-[#eff2f7] ml-20 shadow-inner rounded-l p-2 flex-1' id='name'  placeholder='First Name, Last Name' />
+        <input type="text" className=' w-12 bg-[#eff2f7] ml-20 shadow-inner rounded-l p-2 flex-1' id='name'  placeholder='example@gmail.com' />
       </form>
       </div> 
 
@@ -55,7 +55,7 @@ function Performance() {
    </div>
 
    <div> 
-    <button className = 'font-normal text-lg rounded-full text-white bg-[#735972] mt-16 ml-20'> &nbsp; Submit Feedback &nbsp;  </button>
+    <button className = 'p-4 font-normal text-lg rounded-full hover:bg-[#493b49] text-white bg-[#735972] mt-16 ml-20'> &nbsp; Submit Feedback &nbsp;  </button>
    </div>
 
     </div>
