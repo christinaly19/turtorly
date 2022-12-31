@@ -1,7 +1,7 @@
 /* Split the screen in half */
 .split {
     height: 100%;
-    width: 40%;
+    width: 40% !important;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -11,7 +11,7 @@
   
   /* Control the left side */
   .left {
-    width:65%;
+    width: 60% !important;
     z-index: 1;
   }
   
