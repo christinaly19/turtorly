@@ -22,7 +22,7 @@ function Navbar({current, buttontxt, className, showbutton}) {
     {showbutton && (
         <button onClick = {navigateToHome} type="button" class= "text-white  bg-black hover:bg-[#735972] focus:ring-2 focus:outline-none focus:ring-gray-400 font-semibold rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> {buttontxt} </button>  )}
         <Routes>
-              <Route path='/tutorly' element={<Homepage></Homepage>} />
+              <Route path="/tutorly" element={<Homepage></Homepage>} />
         </Routes>
         <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
