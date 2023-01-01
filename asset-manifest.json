@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/tutorly/static/css/main.c40ee8c2.css",
-    "main.js": "/tutorly/static/js/main.9e848227.js",
+    "main.css": "/tutorly/static/css/main.fce99e83.css",
+    "main.js": "/tutorly/static/js/main.68910e05.js",
     "static/js/703.f9f7df78.chunk.js": "/tutorly/static/js/703.f9f7df78.chunk.js",
     "static/js/598.9073bb87.chunk.js": "/tutorly/static/js/598.9073bb87.chunk.js",
     "static/js/787.28cb0dcd.chunk.js": "/tutorly/static/js/787.28cb0dcd.chunk.js",
     "static/media/phone2.png": "/tutorly/static/media/phone2.7d4fe4a76e48a427dd67.png",
     "static/media/phone.png": "/tutorly/static/media/phone.e63495ca1a4a0eb0ed60.png",
     "index.html": "/tutorly/index.html",
-    "main.c40ee8c2.css.map": "/tutorly/static/css/main.c40ee8c2.css.map",
-    "main.9e848227.js.map": "/tutorly/static/js/main.9e848227.js.map",
+    "main.fce99e83.css.map": "/tutorly/static/css/main.fce99e83.css.map",
+    "main.68910e05.js.map": "/tutorly/static/js/main.68910e05.js.map",
     "703.f9f7df78.chunk.js.map": "/tutorly/static/js/703.f9f7df78.chunk.js.map",
     "598.9073bb87.chunk.js.map": "/tutorly/static/js/598.9073bb87.chunk.js.map",
     "787.28cb0dcd.chunk.js.map": "/tutorly/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c40ee8c2.css",
-    "static/js/main.9e848227.js"
+    "static/css/main.fce99e83.css",
+    "static/js/main.68910e05.js"
   ]
 }
