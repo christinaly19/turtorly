@@ -13,24 +13,21 @@ import {jsPDF} from 'jspdf';
 
 
 const Performance = () => { 
-  const createPDF = async () => {
+  const createPDF = async () => {   
     const pdf = new jsPDF("landscape", "pt", "a4"); 
-    const data = await html2canvas(document.querySelector('#sheet'));
+    const data = await html2canvas(document.querySelector("#root"));
     const img = data.toDataURL("image/png");  
     const imgProperties = pdf.getImageProperties(img);
     const pdfWidth = pdf.internal.pageSize.getWidth();
     const pdfHeight = (imgProperties.height * pdfWidth) / imgProperties.width;
     pdf.addImage(img, "PNG", 0, 0, pdfWidth, pdfHeight);
-    var filename="any_name_" + new Date().toJSON().slice(0,10)
-    pdf.save(filename);
-      };
+    pdf.save("shipping_label.pdf");
+  };
 
-  return (
-    
+  return (  
   <div>
         <Navbar showbutton = {true} buttontxt = 'Back to Home' current = 'Peformance' className = 'bg-[#f4e9e3] px-2 sm:px-4 lg:px-6 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0'></Navbar>
         <div className = 'spacing'></div>
-    <div id = 'sheet'>
       <div>
     <h1 className ="font-serif  tracking-wide text-center mb-4 text-4xl font-semibold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-[#735972] from-[#aa75a8]"> Tutor.ly | </span>  Performance Sheet: </h1>
     <p className= 'ml-4 mr-4 font-sans mt-6 text-xl text-center'> Tutor.ly performance sheet is used as a template for tutors to easily grade their students and give feedback in essential areas of learning. 
@@ -38,7 +35,6 @@ const Performance = () => {
     With a few clicks of a mouse, the sheet can be filled, downloaded and sent via email to students and/or parents, seamlessly 
     <br></br>
     providing updates on learning.</p>
-    </div>
         <div className = 'container mt-4 p-2'>
           <div class = 'left'>
             <div class="ml-10 grid gap-2 grid-cols-2 grid-rows-3 2xl:grid-cols-1 2xl:grid-rows-8">
@@ -96,15 +92,15 @@ const Performance = () => {
                                     and any key feedback for parents/guardians."
                                     multiline
                                     fullWidth
-                            
                                     minRows={10}/>
                                     </div>
-                                    <button  onClick = {createPDF} id = 'screenshot' className = 'ml-56 p-4 font-normal text-bg rounded-full hover:bg-[#493b49] text-white bg-[#735972] mt-16 content-center'> &nbsp; ↓ Download Sheet &nbsp;  </button>
-
                                     </div>
                                     </div>
                                     </div>
+                                    <button  onClick = {createPDF} className = 'ml-56 p-4 font-normal text-bg rounded-full hover:bg-[#493b49] text-white bg-[#735972] mt-16 content-center'> &nbsp; ↓ Download Sheet &nbsp;  </button>
                                     </div>
+                                  
+                
   )
 }
 
