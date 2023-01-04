@@ -5,7 +5,21 @@ import { Routes, Route, useNavigate} from 'react-router-dom';
 import Homepage from './homepage';
 
 
-function Navbar({current, buttontxt, className, showbutton}) {
+function Navbar({homebold, aboutbold,current, buttontxt, className, showbutton}) {
+  let classstyle = ''
+  let classstylehome= ''
+  if (aboutbold === true) {
+    classstyle = "font-bold block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C3AAB0] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+  }
+  else {
+    classstyle = " block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C3AAB0] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+  }
+  if (homebold === true) {
+    classstylehome = "font-bold block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C3AAB0] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+  }
+  else {
+    classstylehome = " block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C3AAB0] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+  }
   const navigate = useNavigate();
 
   const navigateToHome = () => {
@@ -35,10 +49,10 @@ function Navbar({current, buttontxt, className, showbutton}) {
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
         <li>
-          <a href="/" class="block py-2 pl-3 pr-4 font-bold md:bg-transparent hover:text-[#C3AAB0] md:text-black md:p-0 dark:text-white" aria-current="page">{current}</a>
+          <a onClick={navigateToHome} className = {classstylehome} aria-current="page">{current}</a>
         </li>
         <li>
-          <a onClick = {navigateToAbout} class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C3AAB0] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          <a onClick = {navigateToAbout} className ={classstyle}>About</a>
         </li>
         <li>
           <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C3AAB0] md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
