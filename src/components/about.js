@@ -14,11 +14,11 @@ function About() {
         progress reports and updates between tutors and students/parents. With Tutor.ly's unique performance page, tutors can easily grade students on learning by 
         scoring students on key areas such as productivity, focus, understanding, homework completiton, and more. Tutors can then easily download the page, and send it to parent emails 
         with only a few mouse clicks — freeing up more time for learning and teaching. </p>
-        <div className = 'mt-10 ml-20 grid grid-cols-3'>
-            <div>  <img alt = 'phone' src={circle1}/> 
+        <div className = 'mt-16 ml-20 grid grid-cols-3'>
+            <div className = 'card hover:'>  <img alt = 'phone' src={circle1}/> 
             </div>
-            <div>  <img alt = 'phone' src={circle2}/> </div>
-            <div>  <img alt = 'phone' src={circle3}/> </div>
+            <div className = 'card'>  <img alt = 'phone' src={circle2}/> </div>
+            <div className= 'card'>  <img alt = 'phone' src={circle3}/> </div>
            
         </div>
     </div>

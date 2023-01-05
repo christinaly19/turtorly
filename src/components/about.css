@@ -1,0 +1,6 @@
+.card:hover {
+    margin-top: -45px;
+    background: linear-gradient(180deg, hsla(0, 0%, 99%, 1) 7%, hsla(0, 0%, 99%, 1) 7%, hsla(300, 55%, 96%, 1) 99%);
+
+    
+}
