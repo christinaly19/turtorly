@@ -1,6 +1,9 @@
 import './about.css'
 import React from 'react'
 import Navbar from './navbar'
+import circle1 from '../assets/circle1.png'
+import circle2 from '../assets/circle2.png'
+import circle3 from '../assets/circle3.png'
 function About() {
   return (
     <div>
@@ -11,6 +14,13 @@ function About() {
         progress reports and updates between tutors and students/parents. With Tutor.ly's unique performance page, tutors can easily grade students on learning by 
         scoring students on key areas such as productivity, focus, understanding, homework completiton, and more. Tutors can then easily download the page, and send it to parent emails 
         with only a few mouse clicks — freeing up more time for learning and teaching. </p>
+        <div className = 'mt-10 ml-20 grid grid-cols-3'>
+            <div>  <img alt = 'phone' src={circle1}/> 
+            </div>
+            <div>  <img alt = 'phone' src={circle2}/> </div>
+            <div>  <img alt = 'phone' src={circle3}/> </div>
+           
+        </div>
     </div>
   )
 }
