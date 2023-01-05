@@ -1,6 +1,9 @@
 .card:hover {
-    margin-top: -45px;
-    background: linear-gradient(180deg, hsla(0, 0%, 99%, 1) 7%, hsla(0, 0%, 99%, 1) 7%, hsla(300, 55%, 96%, 1) 99%);
-
-    
+    margin-top: -70px;
+    background: linear-gradient(0deg, hsla(0, 0%, 100%, 1) 4%, hsla(311, 52%, 96%, 1) 42%, hsla(256, 60%, 95%, 1) 99%);
+    -webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
 }
