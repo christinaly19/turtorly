@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/tutorly/static/css/main.47bb6069.css",
-    "main.js": "/tutorly/static/js/main.a7eaacfe.js",
+    "main.css": "/tutorly/static/css/main.bacdf682.css",
+    "main.js": "/tutorly/static/js/main.ac3116c3.js",
     "static/js/703.f9f7df78.chunk.js": "/tutorly/static/js/703.f9f7df78.chunk.js",
     "static/js/598.9073bb87.chunk.js": "/tutorly/static/js/598.9073bb87.chunk.js",
     "static/js/787.28cb0dcd.chunk.js": "/tutorly/static/js/787.28cb0dcd.chunk.js",
     "static/media/phone2.png": "/tutorly/static/media/phone2.7d4fe4a76e48a427dd67.png",
+    "static/media/circle1.png": "/tutorly/static/media/circle1.4b0bbe3ccdb808e6f59b.png",
     "static/media/phone.png": "/tutorly/static/media/phone.e63495ca1a4a0eb0ed60.png",
+    "static/media/circle3.png": "/tutorly/static/media/circle3.087714a2f4ab4438a8ce.png",
+    "static/media/circle2.png": "/tutorly/static/media/circle2.a0c3fc762d3a35f7ca00.png",
     "index.html": "/tutorly/index.html",
-    "main.47bb6069.css.map": "/tutorly/static/css/main.47bb6069.css.map",
-    "main.a7eaacfe.js.map": "/tutorly/static/js/main.a7eaacfe.js.map",
+    "main.bacdf682.css.map": "/tutorly/static/css/main.bacdf682.css.map",
+    "main.ac3116c3.js.map": "/tutorly/static/js/main.ac3116c3.js.map",
     "703.f9f7df78.chunk.js.map": "/tutorly/static/js/703.f9f7df78.chunk.js.map",
     "598.9073bb87.chunk.js.map": "/tutorly/static/js/598.9073bb87.chunk.js.map",
     "787.28cb0dcd.chunk.js.map": "/tutorly/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47bb6069.css",
-    "static/js/main.a7eaacfe.js"
+    "static/css/main.bacdf682.css",
+    "static/js/main.ac3116c3.js"
   ]
 }
