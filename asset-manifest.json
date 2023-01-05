@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tutorly/static/css/main.c1794864.css",
-    "main.js": "/tutorly/static/js/main.1bd3c838.js",
+    "main.js": "/tutorly/static/js/main.787b2af2.js",
     "static/js/703.f9f7df78.chunk.js": "/tutorly/static/js/703.f9f7df78.chunk.js",
     "static/js/598.9073bb87.chunk.js": "/tutorly/static/js/598.9073bb87.chunk.js",
     "static/js/787.28cb0dcd.chunk.js": "/tutorly/static/js/787.28cb0dcd.chunk.js",
@@ -12,13 +12,13 @@
     "static/media/phone.png": "/tutorly/static/media/phone.e63495ca1a4a0eb0ed60.png",
     "index.html": "/tutorly/index.html",
     "main.c1794864.css.map": "/tutorly/static/css/main.c1794864.css.map",
-    "main.1bd3c838.js.map": "/tutorly/static/js/main.1bd3c838.js.map",
+    "main.787b2af2.js.map": "/tutorly/static/js/main.787b2af2.js.map",
     "703.f9f7df78.chunk.js.map": "/tutorly/static/js/703.f9f7df78.chunk.js.map",
     "598.9073bb87.chunk.js.map": "/tutorly/static/js/598.9073bb87.chunk.js.map",
     "787.28cb0dcd.chunk.js.map": "/tutorly/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1794864.css",
-    "static/js/main.1bd3c838.js"
+    "static/js/main.787b2af2.js"
   ]
 }
