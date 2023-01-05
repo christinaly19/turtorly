@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/tutorly/static/css/main.bacdf682.css",
-    "main.js": "/tutorly/static/js/main.ac3116c3.js",
+    "main.css": "/tutorly/static/css/main.0b7554eb.css",
+    "main.js": "/tutorly/static/js/main.fcc1bba9.js",
     "static/js/703.f9f7df78.chunk.js": "/tutorly/static/js/703.f9f7df78.chunk.js",
     "static/js/598.9073bb87.chunk.js": "/tutorly/static/js/598.9073bb87.chunk.js",
     "static/js/787.28cb0dcd.chunk.js": "/tutorly/static/js/787.28cb0dcd.chunk.js",
+    "static/media/circle1.png": "/tutorly/static/media/circle1.374ec47df13b5147a3a6.png",
+    "static/media/circle3.png": "/tutorly/static/media/circle3.a075871d02b5c73db52b.png",
+    "static/media/circle2.png": "/tutorly/static/media/circle2.b0356bb23ede6d89b7e6.png",
     "static/media/phone2.png": "/tutorly/static/media/phone2.7d4fe4a76e48a427dd67.png",
-    "static/media/circle1.png": "/tutorly/static/media/circle1.4b0bbe3ccdb808e6f59b.png",
     "static/media/phone.png": "/tutorly/static/media/phone.e63495ca1a4a0eb0ed60.png",
-    "static/media/circle3.png": "/tutorly/static/media/circle3.087714a2f4ab4438a8ce.png",
-    "static/media/circle2.png": "/tutorly/static/media/circle2.a0c3fc762d3a35f7ca00.png",
     "index.html": "/tutorly/index.html",
-    "main.bacdf682.css.map": "/tutorly/static/css/main.bacdf682.css.map",
-    "main.ac3116c3.js.map": "/tutorly/static/js/main.ac3116c3.js.map",
+    "main.0b7554eb.css.map": "/tutorly/static/css/main.0b7554eb.css.map",
+    "main.fcc1bba9.js.map": "/tutorly/static/js/main.fcc1bba9.js.map",
     "703.f9f7df78.chunk.js.map": "/tutorly/static/js/703.f9f7df78.chunk.js.map",
     "598.9073bb87.chunk.js.map": "/tutorly/static/js/598.9073bb87.chunk.js.map",
     "787.28cb0dcd.chunk.js.map": "/tutorly/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bacdf682.css",
-    "static/js/main.ac3116c3.js"
+    "static/css/main.0b7554eb.css",
+    "static/js/main.fcc1bba9.js"
   ]
 }
